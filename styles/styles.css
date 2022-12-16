@@ -1,0 +1,81 @@
+/* --- fonts --- */
+
+/* font-family: 'Space Grotesk', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+/* --- colors ---*/
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+
+  /* Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%) */
+}
+
+/* --- base --- */
+
+body {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* --- form --- */
+
+form {
+  margin: auto;
+  width: 340px;
+  font-size: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+label,
+input {
+  margin-bottom: 1rem;
+}
+
+input,
+button {
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--dark-grayish-violet);
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.form-bottom,
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  width: 100%;
+}
+
+.right {
+  margin-left: 1rem;
+}
+
+.form-date {
+  width: 43%;
+}
+
+button {
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  font-size: 1.2rem;
+  height: 3rem;
+}
