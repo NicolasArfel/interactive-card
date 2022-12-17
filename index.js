@@ -21,6 +21,7 @@ form.addEventListener('submit', (e) => {
   cvcEl.innerHTML = cvcInput.value;
 });
 
+// je crée le format carte bleue avec des séries de 4 chiffres
 function format(num) {
   return num.toString().replace(/\d{4}(?=.)/g, '$& ');
 }
